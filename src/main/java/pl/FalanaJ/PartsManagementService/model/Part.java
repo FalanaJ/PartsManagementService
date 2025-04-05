@@ -19,6 +19,10 @@ public class Part {
         this.quantity = quantity;
     }
 
+    protected boolean canEqual(final Object other) {
+        return other instanceof Part;
+    }
+
     public PartId getId() {
         return this.Id;
     }
@@ -45,10 +49,6 @@ public class Part {
         if (this$Id == null ? other$Id != null : !this$Id.equals(other$Id)) return false;
         if (this.getQuantity() != other.getQuantity()) return false;
         return true;
-    }
-
-    protected boolean canEqual(final Object other) {
-        return other instanceof Part;
     }
 
     public int hashCode() {

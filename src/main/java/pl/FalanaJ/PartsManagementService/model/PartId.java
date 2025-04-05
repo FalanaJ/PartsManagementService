@@ -19,6 +19,10 @@ public class PartId implements Serializable {
     public PartId() {
     }
 
+    protected boolean canEqual(final Object other) {
+        return other instanceof PartId;
+    }
+
     public String getMaterialNumber() {
         return this.materialNumber;
     }
@@ -43,10 +47,6 @@ public class PartId implements Serializable {
         this.supplierNumber = supplierNumber;
     }
 
-    public String toString() {
-        return "PartId(materialNumber=" + this.getMaterialNumber() + ", serialNumber=" + this.getSerialNumber() + ", supplierNumber=" + this.getSupplierNumber() + ")";
-    }
-
     public boolean equals(final Object o) {
         if (o == this) return true;
         if (!(o instanceof PartId)) return false;
@@ -67,10 +67,6 @@ public class PartId implements Serializable {
         return true;
     }
 
-    protected boolean canEqual(final Object other) {
-        return other instanceof PartId;
-    }
-
     public int hashCode() {
         final int PRIME = 59;
         int result = 1;
@@ -81,5 +77,9 @@ public class PartId implements Serializable {
         final Object $supplierNumber = this.getSupplierNumber();
         result = result * PRIME + ($supplierNumber == null ? 43 : $supplierNumber.hashCode());
         return result;
+    }
+
+    public String toString() {
+        return "PartId(materialNumber=" + this.getMaterialNumber() + ", serialNumber=" + this.getSerialNumber() + ", supplierNumber=" + this.getSupplierNumber() + ")";
     }
 }
