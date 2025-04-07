@@ -1,17 +1,17 @@
-2025-04-07 10:21:38 [ INFO  ] : Starting PartsManagementServiceApplication using Java 17.0.8.1 with PID 12360 (C:\Users\Kubim\OneDrive\Pulpit\PartsManagementService\target\classes started by Kubim in C:\Users\Kubim\OneDrive\Pulpit\PartsManagementService)
-2025-04-07 10:21:38 [ DEBUG ] : Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-07 10:21:38 [ INFO  ] : No active profile set, falling back to 1 default profile: "default"
-2025-04-07 10:21:41 [ INFO  ] : Initializing ProtocolHandler ["http-nio-8080"]
-2025-04-07 10:21:41 [ INFO  ] : Starting service [Tomcat]
-2025-04-07 10:21:41 [ INFO  ] : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-07 10:21:41 [ INFO  ] : Initializing Spring embedded WebApplicationContext
-2025-04-07 10:21:42 [ INFO  ] : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-07 10:21:42 [ INFO  ] : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-04-07 10:21:42 [ INFO  ] : HHH000026: Second-level cache disabled
-2025-04-07 10:21:43 [ INFO  ] : HikariPool-1 - Starting...
-2025-04-07 10:21:43 [ INFO  ] : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:partsdb user=SA
-2025-04-07 10:21:43 [ INFO  ] : HikariPool-1 - Start completed.
-2025-04-07 10:21:44 [ INFO  ] : HHH10001005: Database info:
+2025-04-07 10:32:01 [ INFO  ] : Starting PartsManagementServiceApplication using Java 17.0.8.1 with PID 6560 (C:\Users\Kubim\OneDrive\Pulpit\PartsManagementService\target\classes started by Kubim in C:\Users\Kubim\OneDrive\Pulpit\PartsManagementService)
+2025-04-07 10:32:01 [ DEBUG ] : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-07 10:32:01 [ INFO  ] : No active profile set, falling back to 1 default profile: "default"
+2025-04-07 10:32:05 [ INFO  ] : Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-07 10:32:05 [ INFO  ] : Starting service [Tomcat]
+2025-04-07 10:32:05 [ INFO  ] : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-07 10:32:05 [ INFO  ] : Initializing Spring embedded WebApplicationContext
+2025-04-07 10:32:05 [ INFO  ] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-07 10:32:05 [ INFO  ] : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-07 10:32:05 [ INFO  ] : HHH000026: Second-level cache disabled
+2025-04-07 10:32:06 [ INFO  ] : HikariPool-1 - Starting...
+2025-04-07 10:32:07 [ INFO  ] : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:partsdb user=SA
+2025-04-07 10:32:07 [ INFO  ] : HikariPool-1 - Start completed.
+2025-04-07 10:32:07 [ INFO  ] : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -19,16 +19,20 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-04-07 10:21:45 [ INFO  ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-07 10:21:46 [ WARN  ] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-07 10:21:47 [ INFO  ] : Starting ProtocolHandler ["http-nio-8080"]
-2025-04-07 10:21:47 [ INFO  ] : Started PartsManagementServiceApplication in 9.902 seconds (process running for 11.638)
-2025-04-07 10:22:00 [ INFO  ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-07 10:22:00 [ DEBUG ] : A DEBUG Message
-2025-04-07 10:22:00 [ INFO  ] : An INFO Message
-2025-04-07 10:22:00 [ WARN  ] : A WARN Message
-2025-04-07 10:22:00 [ ERROR ] : An ERROR Message
-2025-04-07 10:22:12 [ WARN  ] : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Baza danych jest już zamknięta (aby zablokować samoczynne zamykanie podczas zamknięcia VM dodaj ";DB_CLOSE_ON_EXIT=FALSE" do URL bazy danych)
+2025-04-07 10:32:09 [ INFO  ] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-07 10:32:09 [ WARN  ] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-07 10:32:10 [ INFO  ] : Starting ProtocolHandler ["http-nio-8080"]
+2025-04-07 10:32:10 [ INFO  ] : Started PartsManagementServiceApplication in 10.001 seconds (process running for 11.713)
+2025-04-07 10:32:24 [ INFO  ] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-07 10:32:29 [ INFO  ] : New part was added: Part(Id=PartId(materialNumber=MAT-011, serialNumber=SN-12345, supplierNumber=SUP-44), quantity=100)
+2025-04-07 10:32:33 [ INFO  ] : New part was added: Part(Id=PartId(materialNumber=MAT-012, serialNumber=SN-12345, supplierNumber=SUP-44), quantity=100)
+2025-04-07 10:32:43 [ INFO  ] : Quantity of part with id: PartId(materialNumber=MAT-011, serialNumber=SN-12345, supplierNumber=SUP-44) was changed.
+2025-04-07 10:32:51 [ INFO  ] : Part with id: PartId(materialNumber=MAT-011, serialNumber=SN-12345, supplierNumber=SUP-44) was deleted.
+2025-04-07 10:32:55 [ DEBUG ] : A DEBUG Message
+2025-04-07 10:32:55 [ INFO  ] : An INFO Message
+2025-04-07 10:32:55 [ WARN  ] : A WARN Message
+2025-04-07 10:32:55 [ ERROR ] : An ERROR Message
+2025-04-07 10:33:14 [ WARN  ] : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Baza danych jest już zamknięta (aby zablokować samoczynne zamykanie podczas zamknięcia VM dodaj ";DB_CLOSE_ON_EXIT=FALSE" do URL bazy danych)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-2025-04-07 10:22:12 [ INFO  ] : HikariPool-1 - Shutdown initiated...
-2025-04-07 10:22:12 [ INFO  ] : HikariPool-1 - Shutdown completed.
+2025-04-07 10:33:14 [ INFO  ] : HikariPool-1 - Shutdown initiated...
+2025-04-07 10:33:14 [ INFO  ] : HikariPool-1 - Shutdown completed.
