@@ -1,8 +1,6 @@
 package pl.FalanaJ.PartsManagementService.controller;
 
 import lombok.extern.log4j.Log4j2;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,10 +11,10 @@ import pl.FalanaJ.PartsManagementService.service.PartService;
 import java.util.List;
 
 @RestController
+@Log4j2
 @RequestMapping("/api/v2/parts")
 public class PartController {
     private final PartService partService;
-    Logger log = LoggerFactory.getLogger(PartController.class);
 
     public PartController(PartService partService) {
         this.partService = partService;
@@ -55,6 +53,6 @@ public class PartController {
 
         PartId partId = new PartId(materialNumber, serialNumber, supplierNumber);
         partService.updateQuantity(partId, quantity);
-        log.info("Ouantity of part with id: " + partId + " was changed.");
+        log.info("Quantity of part with id: " + partId + " was changed.");
     }
 }
