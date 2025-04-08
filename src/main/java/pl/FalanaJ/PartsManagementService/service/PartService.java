@@ -30,7 +30,7 @@ public class PartService {
 
     public void updateQuantity(PartId partId, int quantity) {
         Part part = partRepository.findById(partId)
-                .orElseThrow(() -> new RuntimeException("[ Part with id " + partId + " not found ]"));
+                .orElseThrow(() -> new RuntimeException("[ Part with id: " + partId + " not found ]"));
 
         part.setQuantity(quantity);
         partRepository.save(part);

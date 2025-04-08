@@ -6,6 +6,8 @@ import jakarta.persistence.Table;
 import lombok.*;
 
 @EqualsAndHashCode
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
 @Table(name = "parts")
@@ -15,4 +17,5 @@ public class Part {
     private PartId Id;
 
     private int quantity;
+
 }
