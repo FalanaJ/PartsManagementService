@@ -35,4 +35,8 @@ public class PartService {
         part.setQuantity(quantity);
         partRepository.save(part);
     }
+
+    public boolean isExists(PartId partId){
+        return partRepository.existsById(partId);
+    }
 }

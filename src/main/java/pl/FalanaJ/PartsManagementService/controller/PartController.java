@@ -34,25 +34,37 @@ public class PartController {
     }
 
     @DeleteMapping("/{materialNumber}/{serialNumber}/{supplierNumber}")
-    public void deletePartById(
+    public ResponseEntity<Part> deletePartById(
             @PathVariable String materialNumber,
             @PathVariable String serialNumber,
             @PathVariable String supplierNumber){
 
         PartId partId = new PartId(materialNumber, serialNumber, supplierNumber);
-        partService.deletePartById(partId);
-        log.info("Part with id: " + partId + " was deleted.");
+        if(partService.isExists(partId)){
+            partService.deletePartById(partId);
+            log.info("Part with id: " + partId + " was deleted.");
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else {
+            log.info("Part with id: " + partId + " was not found.");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
     @PutMapping("/{materialNumber}/{serialNumber}/{supplierNumber}")
-    public void updateQuantity(
+    public ResponseEntity<Part> updateQuantity(
             @PathVariable String materialNumber,
             @PathVariable String serialNumber,
             @PathVariable String supplierNumber,
             @RequestParam int quantity){
 
         PartId partId = new PartId(materialNumber, serialNumber, supplierNumber);
-        partService.updateQuantity(partId, quantity);
-        log.info("Quantity of part with id: " + partId + " was changed.");
+        if(partService.isExists(partId)){
+            partService.updateQuantity(partId, quantity);
+            log.info("Quantity of part with id: " + partId + " was changed.");
+            return new ResponseEntity<>(HttpStatus.OK);
+        }else {
+            log.info("Part with id: " + partId + " was not found.");
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 }

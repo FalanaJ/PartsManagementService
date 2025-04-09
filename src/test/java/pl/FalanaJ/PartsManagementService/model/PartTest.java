@@ -1,4 +1,4 @@
-package pl.FalanaJ.PartsManagementService;
+package pl.FalanaJ.PartsManagementService.model;
 
 
 import org.junit.jupiter.api.Test;
