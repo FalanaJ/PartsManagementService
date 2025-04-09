@@ -44,7 +44,7 @@ Instructions on how to install and run the project locally.
 
 1. **Clone repo**:
    ```bash
-   git clone https://github.com/[username]/partsmanagementservice.git
+   git clone https://github.com/[username]/PartsManagementService.git
    
 ## Licence
 
