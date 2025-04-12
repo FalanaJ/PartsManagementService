@@ -35,6 +35,7 @@ List of technologies used in the project:
 - Java 17
 - Spring Boot
 - PostgreSQL / H2 Database
+- Docker
 - Mockito
 - Lombok
 
