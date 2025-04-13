@@ -1,3 +1,4 @@
+
 # Project: PartsManagementService
 
 "Simply microservice for parts management"
@@ -9,9 +10,7 @@ Microservice that stores information about the number of parts in the warehouse.
 2. [Functions](#functions)
 3. [Technology](#technology)
 4. [Instalation](#instalation)
-5. [Configuration](#configuration)
-6. [Tests](#tests)
-7. [Licence](#licence)
+5. [Licence](#licence)
 
 ## Description
 
@@ -25,9 +24,37 @@ The microservice contains unit tests to check its functionality.
 
 ## Functions
 
-- add parts to the warehouse
-- delete parts from the warehouse
-- change the number of parts
+### 1. **Add a part to the warehouse**
+
+-   **Method:** `POST`
+    
+-   **URL:** `/api/v2/parts`
+
+-   **Description:** Adds a new part to the warehouse.
+
+### 2. **Delete a part from the warehouse**
+
+-   **Method:** `DELETE`
+    
+-   **URL:** `/api/v2/parts/{materialId}/{serialNumber}/{supplierId}`
+
+-   **Description:** Deletes a part from the warehouse by its ID.
+
+### 3. **Get all parts from the warehouse**
+
+-   **Method:** `GET`
+    
+-   **URL:** `/api/v2/parts`
+
+-   **Description:** Retrieves a list of all parts in the warehouse.
+
+### 4. **Update the quantity of the part**
+
+-   **Method:** `PUT`
+    
+-   **URL:** `/api/v2/parts/{materialId}/{serialNumber}/{supplierId}`
+
+-   **Description:** Updates the quantity of a part in the warehouse. Required new quantity value to update. 
 
 ## Technology
 
@@ -46,8 +73,20 @@ Instructions on how to install and run the project locally.
 1. **Clone repo**:
    ```bash
    git clone https://github.com/[username]/PartsManagementService.git
+
+To run the microservice in a Docker container, follow these steps:
+
+1. **Build the app and docker image**
+   ```bash
+   mvn clean package
+   docker-compose build
    
+ 2. **To run and stop the container**
+    ```bash
+    docker-compose up -d
+    docker-compose down
+
 ## Licence
 
- MIT License
+MIT License
 Copyright (c) 2025 FalanaJ
