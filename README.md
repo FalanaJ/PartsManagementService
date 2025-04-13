@@ -24,6 +24,8 @@ The microservice contains unit tests to check its functionality.
 
 ## Functions
 
+![swagger partContr](assets/images/partContrSwagger.png)
+
 ### 1. **Add a part to the warehouse**
 
 -   **Method:** `POST`
@@ -36,7 +38,7 @@ The microservice contains unit tests to check its functionality.
 
 -   **Method:** `DELETE`
     
--   **URL:** `/api/v2/parts/{materialId}/{serialNumber}/{supplierId}`
+-   **URL:** `/api/v2/parts/{materialNumber}/{serialNumber}/{supplierNumber}`
 
 -   **Description:** Deletes a part from the warehouse by its ID.
 
@@ -52,7 +54,7 @@ The microservice contains unit tests to check its functionality.
 
 -   **Method:** `PUT`
     
--   **URL:** `/api/v2/parts/{materialId}/{serialNumber}/{supplierId}`
+-   **URL:** `/api/v2/parts/{materialNumber}/{serialNumber}/{supplierNumber}`
 
 -   **Description:** Updates the quantity of a part in the warehouse. Required new quantity value to update. 
 
@@ -72,7 +74,7 @@ Instructions on how to install and run the project locally.
 
 1. **Clone repo**:
    ```bash
-   git clone https://github.com/[username]/PartsManagementService.git
+   git clone https://github.com/FalanaJ/PartsManagementService.git
 
 To run the microservice in a Docker container, follow these steps:
 
