@@ -24,6 +24,8 @@ The microservice contains unit tests to check its functionality.
 
 ## Functions
 
+![swagger partContr](assets/images/partContrSwagger.png)
+
 ### 1. **Add a part to the warehouse**
 
 -   **Method:** `POST`
