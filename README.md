@@ -74,7 +74,7 @@ Instructions on how to install and run the project locally.
 
 1. **Clone repo**:
    ```bash
-   git clone https://github.com/[username]/PartsManagementService.git
+   git clone https://github.com/FalanaJ/PartsManagementService.git
 
 To run the microservice in a Docker container, follow these steps:
 
