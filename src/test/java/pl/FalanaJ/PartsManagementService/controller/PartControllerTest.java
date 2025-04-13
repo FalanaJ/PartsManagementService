@@ -8,7 +8,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
-import pl.FalanaJ.PartsManagementService.controller.PartController;
 import pl.FalanaJ.PartsManagementService.model.Part;
 import pl.FalanaJ.PartsManagementService.model.PartId;
 import pl.FalanaJ.PartsManagementService.service.PartService;

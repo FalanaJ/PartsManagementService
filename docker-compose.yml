@@ -3,7 +3,7 @@ version: '3.8'
 services:
   db:
     image: postgres:15
-    container_name: postgres_container
+    container_name: postgres_container_v2
     environment:
       POSTGRES_DB: Parts_db
       POSTGRES_USER: adminMBD
@@ -15,7 +15,7 @@ services:
 
   app:
     build: .
-    container_name: springboot_container
+    container_name: springboot_container_v2
     ports:
       - "8080:8080"
     depends_on:

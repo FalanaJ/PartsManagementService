@@ -17,27 +17,21 @@ public class PartRepositoryTest {
 
     @Test
     public void testSavePart(){
-        //Given
         PartId partId = new PartId("MAT-000", "SN-00000", "SUP-00");
         Part part = new Part(partId, 100);
 
-        //When
         partRepository.save(part);
 
-        //Then
         assertThat(partRepository.existsById(partId)).isTrue();
     }
 
     @Test
     public void testFindPart(){
-        //Given
         PartId partId = new PartId("MAT-000", "SN-00000", "SUP-00");
         Part part = new Part(partId, 100);
 
-        //When
         partRepository.save(part);
 
-        //Then
         Part found = partRepository.findById(partId).orElse(null);
         assertThat(found).isNotNull();
         assertThat(found.getQuantity()).isEqualTo(100);

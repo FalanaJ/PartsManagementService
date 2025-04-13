@@ -20,6 +20,6 @@ public class HomeControllerTest {
     public void testHelloEndpoint() throws Exception {
         mockMvc.perform(get("/api/v2/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello World!"));
+                .andExpect(content().string("Hello World !!!"));
     }
 }

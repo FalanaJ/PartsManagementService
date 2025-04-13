@@ -5,7 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.*;
 
-@EqualsAndHashCode
+//@EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
